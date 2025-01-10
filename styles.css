@@ -1,0 +1,657 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    background-color: beige;
+}
+
+main {
+    flex-grow: 1;
+}
+.nav-box{
+  display: flex;
+  width: 100%;
+}
+.nav-container {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+nav li {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    font-size: 25px;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+.portfolio-img {
+    width: 200px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+.portfolio-namebox {
+    width:500px;
+    height: 300px;
+    margin-top: 100px;
+}
+
+.portfolio-name {
+    color: black;
+    font-size: 50px; 
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.porfolio-info{
+    color:rgb(0, 0, 0);
+    font-size: 20px; 
+    padding: 5px; 
+    font-weight: 500;
+    margin-left: 50px;
+    width: 550px;
+}
+.Portfolio-imgbox {
+    right: 0;
+    bottom: 350px;
+    margin-right: 150px;
+    position: absolute;
+}
+.Portfolio-mijnimg {
+    border-radius: 100%;
+    width: 240px;
+    height: 315px; 
+    object-fit: cover; 
+}
+.info-container{
+    display: flex;
+    width: 100%;
+}
+.info-box {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+    width: 50%;
+
+}
+.hobby-box{
+    display: flex;
+    width: 50%;
+}
+.personal-contact-info {
+    background-color: beige;
+    padding: 10px;
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+.personal-contact-info li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    list-style: none;
+}
+.trailer-box {
+    display: flex;
+    justify-content: center;
+}
+
+.trailer-container {
+    width: 1200px;
+    height: 700px;
+    background-color: white;
+}
+
+.trailer-box {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.trailer-video{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.trailer-title {
+    font-size: 55px;
+    background: linear-gradient(270deg, #5642E2 0%, #7B00EA 50%, #BD00D4 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+footer {
+    background-image: linear-gradient(to right, rgba(0, 42, 255, 0.31) 0%, rgb(0, 128, 255) 100%);
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+/*max.css*/
+.info-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.info, .hobbys, .Huisdieren {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.Maxie{
+position: absolute;
+right: 0;
+margin-right: 355px;
+top: 121px;
+border-radius: 8px;
+}       
+/*eddy.css*/
+
+.profile-photo {
+    margin: 20px auto;
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 50px;
+
+}
+
+.about h2 {
+    margin-left: 50px;
+}
+
+.about p {
+    background-color: gray;
+     max-width: 350px;
+     padding: 5px;
+     border-radius: 10px;
+     margin-left: 50px;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+    background-color: gray;
+    max-width: 350px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 50px;
+
+}
+
+.game-img{
+    position: absolute; 
+    bottom: 50px;
+    left: 30px;
+    list-style: none;
+    background-color: rgb(128, 128, 128);
+    width: 350px;
+    padding: 10px;
+    margin-left: 550px;
+    border-radius: 10px;
+}
+.gtafivem-img{
+    width: 300px;
+}
+.lordoftherings-img{
+    width: 300px;
+}
+.favo-imgboek{
+    position: absolute; 
+    bottom: 30px;
+    right: 40px;
+    list-style: none;
+    background-color: gray;
+    width: 350px;
+    padding: 10px;
+    margin-left: 550px;
+    border-radius: 10px;
+
+}
+
+.btn:hover {
+    background-color: #003d7a;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+
+}
+/*charlie.css*/
+
+
+.box {
+    border: 2px solid #ffffff;
+    background-color: #1c1c1c;
+    width: 60%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 12px;
+    padding: 1%;
+    box-shadow: 0 0px 20px rgba(255, 255, 255, 0.6);
+}
+
+.main-grid {
+    width: 100%;
+}
+
+.name {
+    font-size: 250%;
+    color: #fdfdfd;
+}
+
+.email {
+    font-size: 120%;
+    color: #b3b3b3;
+    margin-bottom: 15px;
+}
+
+.pfp {
+    border: 5px solid white;
+    border-radius: 100%;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #474747;
+    margin: 15px 0;
+}
+
+.item-grid {
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+th {
+    padding: 15px;
+    font-size: 100%;
+    background-color: #1a1a1a;
+}
+
+.primary {
+    text-align: left;
+    color: #ffffff;
+}
+
+.secondary {
+    text-align: right;
+    color: #d4d4d4;
+}
+
+.item-grid th {
+    border-bottom: 1px solid #7a7a7a;
+}
+/*ayman*/
+
+.ayman-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ayman-info{
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    margin-left: 620px;
+    margin-bottom: 10px;
+}
+.hobbys-ayman{
+    width: 300px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin-left: 120px;
+}
+.huisdier-info{
+    width: 300px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin-left: 620px;
+    margin-top: 10px;
+}
+h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.profile-picture {
+    text-align: center;
+    margin-top: 40px;
+}
+.ayman-img{
+    position: absolute;
+    right: 0;
+    border-radius: 100%;
+    width: 240px;
+    height: 315px; 
+    object-fit: cover; 
+    margin-right: 150px;
+}
+.kenan-body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.kenan-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.kenan-header {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.kenan-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kenan-title {
+    font-size: 1.5em;
+}
+
+.kenan-subtitle {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.kenan-content {
+    padding: 30px;
+}
+
+.kenan-box {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.kenan-section-title {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.kenan-info-list {
+    list-style: none;
+}
+
+.kenan-info-item {
+    padding: 8px 0;
+    font-size: 1.1em;
+}
+
+.kenan-hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.kenan-hobby {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.kenan-hobby:hover {
+    transform: translateY(-3px);
+}
+
+.kenan-hobby-title {
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.kenan-hobby-desc {
+    font-size: 0.95em;
+}
+
+.kenan-goals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.kenan-goal {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.kenan-goal-title {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.kenan-goal-list {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.kenan-goal-item {
+    padding: 5px 0;
+    position: relative;
+}
+
+.kenan-goal-item::before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: -10px;
+}
+
+@media (max-width: 600px) {
+    .kenan-card {
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .kenan-header {
+        padding: 30px 20px;
+    }
+    
+    .kenan-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .kenan-goals {
+        grid-template-columns: 1fr;
+    }
+
+    .kenan-content {
+        padding: 15px;
+    }
+}
+.joost-body {
+    background-color: rgb(200, 230, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.joost-title {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(50, 50, 150);
+    margin-bottom: 20px;
+}
+
+.joost-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.joost-photo {
+    border-radius: 8px;
+    max-width: 200px;
+    height: auto;
+}
+
+.joost-info-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.joost-info-item {
+    font-size: 16px;
+    color: rgb(50, 50, 100);
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.chiel-body-page {
+    background-color: rgb(144, 207, 223);
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+
+.chiel-navigation-bar {
+    display: flex;
+    height: 35px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    border-style: ridge;
+    margin-top: -7%;
+    justify-content: space-around;
+    padding-top: 2%;
+}
+
+.chiel-nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-style: italic;
+}
+
+.chiel-page-title {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+
+.chiel-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.chiel-profile-photo {
+    float: left;
+    border-radius: 8px;
+}
+
+.chiel-info-list {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.chiel-info-title {
+    color: #ffffff;
+}
+
+.chiel-info-item {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-position: inside;
+    text-align: left;
+}
+
+.chiel-link {
+    color: #ffffff;
+}
+
+

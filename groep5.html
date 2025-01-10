@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groep 5 Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        background-color: beige;
+        font-family: Arial, sans-serif;
+    }
+
+    main {
+        flex-grow: 1;
+    }
+    .logo {
+        width: 250px;
+        height: auto;
+        margin-left: 40px;
+    }
+
+    .content {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: beige;
+    }
+
+    .intro-section {
+        background-color: beige;
+        padding: 30px;
+        border-radius: 8px;
+    }
+
+    .intro-section h1 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
+    .team-members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .team-members li {
+        margin: 20px;
+        width: calc(33.33% - 40px);
+    }
+
+    .team-member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #f8f8f8;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    .member-info {
+        flex-grow: 1;
+    }
+
+    .member-name {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .member-role {
+        color: crimson;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 18px;
+    }
+</style>
+<body>
+    <div class="nav-box">
+        <img class="logo" src="img/gildelogo.svg" alt="Gilde Logo">
+    </div>
+    <main class="content">
+        <section class="intro-section">
+            <h1>Introductie Groep 5</h1>
+            <ul class="team-members">
+                <li>
+                    <a href="samuel.html">
+                        <div class="team-member">
+                            <img src="img/samuel.JPG" alt="Foto van Samuel" class="profile-image">
+                            <div class="member-info">
+                                <span class="member-name">Samuel</span>
+                                <span class="member-role">Software Developer</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="kenan.html">
+                        <div class="team-member">
+                            <img src="img/Kenan.jpg" alt="Foto van Kenan" class="profile-image">
+                            <div class="member-info">
+                                <span class="member-name">Kenan</span>
+                                <span class="member-role">IT System and Devices</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="joost.html">
+                        <div class="team-member">
+                            <img src="img/joost.png" alt="Foto van Joost" class="profile-image">
+                            <div class="member-info">
+                                <span class="member-name">Joost</span>
+                                <span class="member-role">IT System and Devices</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="Chiel.html">
+                        <div class="team-member">
+                            <img src="img/Chiel.jpg" alt="Foto van Chiel" class="profile-image">
+                            <div class="member-info">
+                                <span class="member-name">Chiel</span>
+                                <span class="member-role">Software Developer</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Groep 5 Portfolio</p>
+    </footer>
+</body>
+</html>
