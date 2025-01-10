@@ -1,0 +1,33 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on push to the main branch.
+
+jobs:
+  deploy:
+    runs-on: self-hosted  # Use the self-hosted runner on your server.
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step 2: Clean up the .git folder and website directory
+      - name: Cleanup Server
+        run: |
+          rm -rf /var/www/devops.local/.git  # Remove the .git folder
+          rm -rf /var/www/devops.local/*    # Clean the website directory
+
+      # Step 3: Create an artifact (package the website)
+      - name: Create Artifact
+        run: |
+          mkdir -p artifact
+          cp -r * artifact/  # Copy all files to the artifact directory
+          tar -czf website.tar.gz -C artifact .  # Create a tarball of the website files
+
+      # Step 4: Deploy the artifact to the server
+      - name: Deploy Artifact
+        run: |
+          tar -xzf website.tar.gz -C /var/www/devops.local  # Extract the tarball to the website directory
